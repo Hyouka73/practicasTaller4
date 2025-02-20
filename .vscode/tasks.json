@@ -10,7 +10,7 @@
             "runOptions": {
                 "runOn": "folderOpen" // Ejecutar automáticamente al abrir la carpeta
             },
-            "detail": "Ejecutar el servidor backend"
+            "detail": "Ejecutar el servidor de Api_gateway"
         },
         {
             "label": "Run Productos",
@@ -21,7 +21,7 @@
             "runOptions": {
                 "runOn": "folderOpen" // Ejecutar automáticamente al abrir la carpeta
             },
-            "detail": "Ejecutar el servidor frontend"
+            "detail": "Ejecutar el servidor de productos"
         },{
             "label": "Run Usuarios",
             "type": "npm",
@@ -31,7 +31,7 @@
             "runOptions": {
                 "runOn": "folderOpen" // Ejecutar automáticamente al abrir la carpeta
             },
-            "detail": "Ejecutar el servidor frontend"
+            "detail": "Ejecutar el servidor de usuarios"
         }
     ]
 }
