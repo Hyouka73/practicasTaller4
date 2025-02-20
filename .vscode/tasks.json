@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Backend",
+            "type": "npm",
+            "script": "dev", // Cambia "dev" por el script que usas en tu backend
+            "path": "api_gateway", // Ruta a la carpeta del backend
+            "problemMatcher": [],
+            "runOptions": {
+                "runOn": "folderOpen" // Ejecutar automáticamente al abrir la carpeta
+            },
+            "detail": "Ejecutar el servidor backend"
+        },
+        {
+            "label": "Run Frontend",
+            "type": "npm",
+            "script": "dev", // Cambia "dev" por el script que usas en tu frontend
+            "path": "productos", // Ruta a la carpeta del frontend
+            "problemMatcher": [],
+            "runOptions": {
+                "runOn": "folderOpen" // Ejecutar automáticamente al abrir la carpeta
+            },
+            "detail": "Ejecutar el servidor frontend"
+        }
+    ]
+}
