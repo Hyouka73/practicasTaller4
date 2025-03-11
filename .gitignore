@@ -16,7 +16,9 @@ yarn-error.log
 api_gateway/src/.env
 productos/src/.env
 usuarios/src/.env
-*/src/.env  # Esta línea coincide con cualquier archivo .env en cualquier carpeta src
+*/src/.env  
+**/.env
+**/src/.env
 
 # Logs
 logs
