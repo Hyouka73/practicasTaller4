@@ -15,6 +15,10 @@ app.use(express.json());
 // Rutas
 app.use('/', productosRoutes);
 
+app.get('/', (req, res) => {
+  res.send('Servicio de Productos activo.<br>Opciones disponibles:<br>/productos<br> /productos/all');
+});
+
 // Función para verificar la conexión a la base de datos
 const testDatabaseConnection = async () => {
   try {
@@ -34,7 +38,7 @@ const startServer = async () => {
   
   if (isConnected) {
     app.listen(port, () => {
-      console.log(`Servicio de Productos funcionando en el puerto ${port}`);
+      console.log(`Servicio de Productos funcionando en el puerto http://localhost:${port}/`);
     });
   } else {
     console.error('No se pudo iniciar el servidor debido a problemas con la base de datos');

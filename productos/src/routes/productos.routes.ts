@@ -1,12 +1,12 @@
-// src/routes/productosRoutes.ts
+// src/routes/productos.routes.ts
 
-import express from 'express';
-import { getProductos, getAllProductos } from '../controllers/productos.controller';
+import { Router } from 'express';
+import { getProductos, getAllProductos, createProductos } from '../controllers/productos.controller';
 
-const router = express.Router();
+const router = Router();
 
-router.get('/productos', getProductos);
-router.get('/productos/all', getAllProductos);
-
+router.get('/productos/id', getProductos);
+router.get('/productos', getAllProductos);
+router.post('/productos', createProductos);
 
 export default router;
